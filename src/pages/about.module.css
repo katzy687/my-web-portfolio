@@ -1,5 +1,6 @@
 .PageContainer {
-  width: 90%;
+  max-width: 768px;
+  padding: 0 1em;
   margin: auto;
 }
 
@@ -30,6 +31,8 @@
   width: 50px;
   color: #eee;
   margin: 0;
+  padding: 0 0.7em;
+  opacity: 0.5;
 }
 
 .NumberContainer li {
@@ -37,6 +40,9 @@
   text-align: center;
 }
 
+.TabsContainer {
+  width: 100%;
+}
 
 .Tab {
   background: #4E342E;
@@ -52,4 +58,10 @@
 
 .ActiveTab {
   background: brown;
+}
+
+@media screen and (min-width: 500px) {
+  .PageContainer {
+    padding: 0 2em;
+  }
 }

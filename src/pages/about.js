@@ -6,13 +6,15 @@ import styles from './about.module.css';
 const AboutMe = () => (
   <div>
     <p>
-      I enjoy planning out mobile first responsive designs when I'm building a front end.
-      I write clean, functional style code when developing server/client logic.
+      I'm a full-stack web developer with a leaning towards the front end.
+      I enjoy planning out mobile first responsive designs and writing clean, functional style code.
     </p>
-    <p>When I'm not developing I like to be active (basketball, martial arts, hiking).
-       I'm originally from Cleveland, Ohio, and currently based in Tel Aviv.
+    <p>When I'm not developing I like to be active (basketball, martial arts, hiking, travelling).
+       I'm originally from Cleveland, Ohio, and currently live in Tel Aviv. Just hanging out with extended family.
     </p>
-    <p>My relevant skills and tools are referenced below.</p>
+    <p>My relevant skills and tools are referenced below. 
+       Or check out my CV if you prefer.
+    </p>
   </div>
 )
 
@@ -22,16 +24,16 @@ const FrontEndContent = () => (
     <p>HTML5/CSS/Javascript, ES6, Typescript</p>
 
     <h4>// JS Frameworks</h4>
-    <p>AngularJS, Angular 5, React, ReactNative, NativeScript</p>
+    <p>React, ReactNative, AngularJS, Angular 5+, NativeScript</p>
 
     <h4>// CSS and Design</h4>
     <p>Flexbox, CSS Grid, Angular Material, React-SemanticUI</p>
 
     <h4>// WorkFlow</h4>
-    <p>Git, Webpack</p>
+    <p>Git, Webpack, Gulp</p>
 
-    <h4>// Various Libraries I like</h4>
-    <p>anime.js, D3, Lodash, Ramda</p>
+    <h4>// Various libraries I like</h4>
+    <p>anime.js, D3, Lodash, Ramda, GatsbyJS(used for this project!)</p>
   </div>
 );
 
@@ -40,14 +42,15 @@ const BackEndContent = () => (
     <h4>// NodeJS Frameworks</h4>
     <p>Express, Loopback</p>
 
-    <h4>// Databases I'm familiar With</h4>
-    <p>MongoDB, SQL Server, GraphQL(application layer querying)</p>
+    <h4>// Databases I'm familiar with</h4>
+    <p>MongoDB, SQL Server, GraphQL(application layer querying), Firebase, AWS</p>
+
+    <h4>// Process Management</h4>
+    <p>PM2, Strongloop</p>
 
     <h4>// NPM Packages I like</h4>
     <p>Passport, Nodemailer, Socket.IO </p>
 
-    <h4>// Process Management</h4>
-    <p>PM2, Strongloop</p>
   </div>
 );
 
