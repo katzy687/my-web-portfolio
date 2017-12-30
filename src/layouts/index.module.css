@@ -1,0 +1,58 @@
+.Container {}
+
+.Container header {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  flex-wrap: wrap;
+  top: 0;
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+
+.Container>header>Link {
+  text-shadow: none;
+  text-decoration: none;
+  background-image: none;
+}
+
+
+.NavList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.Container ListLink {
+  margin-right: 1rem;
+}
+
+.Spacer {
+  margin-bottom: 113px;
+}
+
+@media screen and (min-width: 445px) {
+  .Container header {
+    justify-content: space-between;
+  }
+  .Spacer {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Container header {
+    padding: 1.5rem 2rem;
+  }
+
+  * {
+    font-size: 1.3rem;
+  }
+
+  .Container ul {
+    width: 400px;
+  }
+}

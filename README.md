@@ -1,11 +1,10 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# My Web Portfolio
+Simple Showcase for my projects.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+Built in React on top of the amazingly efficient GatsbyJS framework.
+
 
 ## Running in development
+`git clone`
+`npm install`
 `gatsby develop`
-"# my-web-portfolio" 

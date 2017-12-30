@@ -1,0 +1,55 @@
+.PageContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.EditorContainer {
+  background: #1E1E1E;
+  color: white;
+  font-family: 'Consolas';
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.EditorContainer h4 {
+  margin: 0;
+  color: #4CAF50;
+  line-height: 23.2px;
+  font-family: 'Consolas';
+}
+
+.EditorContainer p {
+  margin-bottom: 23.2px;
+}
+
+.TabPanel {
+  display: flex;
+}
+
+.NumberContainer {
+  width: 50px;
+  color: #eee;
+  margin: 0;
+}
+
+.NumberContainer li {
+  margin: 0;
+  text-align: center;
+}
+
+
+.Tab {
+  background: #4E342E;
+  padding: 0.5rem 2rem;
+  margin: 0;
+}
+
+.TabList {
+  margin: 0;
+  display: flex;
+  background: #3E2723;
+}
+
+.ActiveTab {
+  background: brown;
+}

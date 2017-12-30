@@ -1,0 +1,44 @@
+.BackgroundVid {
+  opacity: 0.5;
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.Main {
+  
+}
+
+.Hello {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px ) {
+  .BackgroundVid {
+    max-height: 115%;
+  }
+  
+  .Hello {
+    left: 30%;
+    top: 30%;
+  }
+}
+
+@media screen and (min-width: 1100px ) {
+  .BackgroundVid {
+    max-height: 122%;
+  }
+}
