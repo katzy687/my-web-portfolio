@@ -1,7 +1,6 @@
 {
-  "name": "natti-katz-portfolio",
-  "description": "My personal web-dev portfolio, built with GatsbyJS",
-  "author": "Natti Katz",
+  "name": "my-web-portfolio",
+  "description": "My personal web-dev portfolio",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
