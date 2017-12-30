@@ -6,9 +6,9 @@ const typography = new Typography({
     a: {
       textDecoration: 'none'
     },
-    h3: {
-      fontFamily: ['Palatino Linotype', 'sans-serif'].join(','),
-    },
+    // h3: {
+    //   fontFamily: ['Palatino Linotype', 'sans-serif'].join(','),
+    // },
     blockquote: {
       ...adjustFontSizeTo('19px'),
       color: 'gray',

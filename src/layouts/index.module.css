@@ -27,20 +27,33 @@
   width: 300px;
 }
 
+.NavList li {
+  margin-bottom: 0;
+}
+
 .Container ListLink {
   margin-right: 1rem;
 }
 
 .Spacer {
-  margin-bottom: 113px;
+  margin-bottom: 110px;
+}
+
+header h3 {
+  margin-bottom: 0.5em;
 }
 
 @media screen and (min-width: 445px) {
   .Container header {
     justify-content: space-between;
   }
+
+  header h3 {
+    margin-bottom: 0;
+  }
+
   .Spacer {
-    margin-bottom: 80px;
+    margin-bottom: 85px;
   }
 }
 
