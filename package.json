@@ -1,6 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "natti-katz-portfolio",
+  "description": "My personal web-dev portfolio, built with GatsbyJS",
+  "author": "Natti Katz",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
