@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import { withPrefix } from "gatsby-link";
 import styles from "./index.module.css";
 import './index.css';
 
@@ -10,7 +11,10 @@ const ListLink = props =>
     </Link>
   </li>
 
-export default ({ children }) => {
+export default ({ children, location }) => {
+  console.log(location);
+  const isHomepage = location.pathname === withPrefix("/");
+  console.log(isHomepage);
   return(
     <div className={styles.Container} >
       <header>

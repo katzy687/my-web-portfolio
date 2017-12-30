@@ -1,11 +1,11 @@
 module.exports = {
+  pathPrefix: `/my-web-portfolio`,
   plugins: [
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
+        pathToConfigModule: 'src/utils/typography.js',
       },
-      pathPrefix: `/my-web-portfolio`,
     }
   ],
 }

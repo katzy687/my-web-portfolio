@@ -10,7 +10,7 @@ const AboutMe = () => (
       I enjoy planning out mobile first responsive designs and writing clean, functional style code.
     </p>
     <p>When I'm not developing I like to be active (basketball, martial arts, hiking, travelling).
-       I'm originally from Cleveland, Ohio, and currently live in Tel Aviv. Just hanging out with extended family.
+       I'm originally from Cleveland, Ohio, and currently live in Tel Aviv.
     </p>
     <p>My relevant skills and tools are referenced below. 
        Or check out my CV if you prefer.
