@@ -1,0 +1,2 @@
+webpackJsonp([0xc260c743ec7c],{238:function(e,t,u){"use strict";function c(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var l=u(2),n=c(l);t.default=function(){return n.default.createElement("div",null,n.default.createElement("h1",null,"Check Out the projects homieee"))},e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-projects-js-5ddd9e3ee99a3634e236.js.map
