@@ -7,7 +7,7 @@ import './index.css';
 const ListLink = props =>
   <li>
     <Link to={props.to} 
-          style={{color: 'white'}}
+          style={{color: props.color}}
           activeStyle={{color: 'red', fontSize: '1.3rem', transition: '0.3s'}}
     >
       {props.children}
@@ -17,6 +17,7 @@ const ListLink = props =>
 export default ({ children, location }) => {
   const isHomepage = location.pathname === withPrefix("/");
   const headerBackground = !isHomepage ? '#202020' : '';
+  const linkColor = !isHomepage ? 'white' : 'black';
 
   return(
     <div className={styles.Container} >
@@ -26,9 +27,9 @@ export default ({ children, location }) => {
         </Link>
         <nav>
           <ul className={styles.NavList} >
-            <ListLink to="/about/">About</ListLink>
-            <ListLink to="/projects/">Projects</ListLink>
-            <ListLink to="/contact/">Contact</ListLink>
+            <ListLink to="/about/" color={linkColor}>About</ListLink>
+            <ListLink to="/projects/" color={linkColor}>Projects</ListLink>
+            <ListLink to="/contact/" color={linkColor}>Contact</ListLink>
           </ul>
         </nav>
       </header>
