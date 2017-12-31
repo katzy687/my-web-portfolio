@@ -5,16 +5,15 @@ import styles from './about.module.css';
 
 const AboutMe = () => (
   <div>
+    <p style={{marginBottom: '0.5em'}}>So a bit about myself.</p>
     <p>
       I'm a full-stack web developer with a leaning towards the front end.
       I enjoy planning out mobile first responsive designs and writing clean, functional style code.
     </p>
     <p>When I'm not developing I like to be active (basketball, martial arts, hiking, travelling).
-       I'm originally from Cleveland, Ohio, and currently live in Tel Aviv.
+       I'm originally from Cleveland, Ohio, and I'm currently based in Tel Aviv.
     </p>
-    <p>My relevant skills and tools are referenced below. 
-       Or check out my CV if you prefer.
-    </p>
+    <p>My relevant skills and tools are referenced below.</p>
   </div>
 )
 
@@ -105,8 +104,10 @@ const SkillsEditor = (props) => (
 export default () => {
   return (
     <div className={styles.PageContainer}>
-      <AboutMe />
-      <SkillsEditor />
+      <div className={styles.ContentContainer}>
+        <AboutMe />
+        <SkillsEditor />
+      </div>
     </div>
   );
 };

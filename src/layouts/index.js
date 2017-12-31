@@ -22,7 +22,7 @@ export default ({ children, location }) => {
     <div className={styles.Container} >
       <header style={{ background: headerBackground }} >
         <Link to="/" style={{ color: '#0080FF'}} >
-          <h3 style={{ marginBottom: 0 }} >Natti Katz</h3>
+          <h3>Natti Katz</h3>
         </Link>
         <nav>
           <ul className={styles.NavList} >
@@ -32,7 +32,7 @@ export default ({ children, location }) => {
           </ul>
         </nav>
       </header>
-      <div className={styles.Spacer} ></div>
+      {/* <div className={styles.Spacer} ></div> */}
       {children()}
     </div>
   );

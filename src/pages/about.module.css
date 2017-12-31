@@ -1,15 +1,20 @@
 .PageContainer {
+  background: #424242;
+  padding: 125px 0 50px;
+  color: whitesmoke;
+}
+
+.ContentContainer {
   max-width: 768px;
   padding: 0 1em;
   margin: auto;
 }
 
 .EditorContainer {
-  background: #1E1E1E;
+  background: #2b1d0e;
   color: white;
   font-family: 'Consolas';
   display: flex;
-  margin-bottom: 50px;
 }
 
 .EditorContainer h4 {
@@ -25,6 +30,7 @@
 
 .TabPanel {
   display: flex;
+  padding-right: 0.5em;
 }
 
 .NumberContainer {
@@ -62,7 +68,7 @@
 }
 
 @media screen and (min-width: 500px) {
-  .PageContainer {
+  .ContentContainer {
     padding: 0 2em;
   }
 }
