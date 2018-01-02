@@ -64,7 +64,7 @@
 }
 
 .ActiveTab {
-  background: brown;
+  background: #0080FF;
 }
 
 @media screen and (min-width: 500px) {
