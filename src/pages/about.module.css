@@ -10,6 +10,8 @@
   margin: auto;
 }
 
+/* Editor */
+
 .EditorContainer {
   background: #2b1d0e;
   color: white;
@@ -65,6 +67,22 @@
 
 .ActiveTab {
   background: #0080FF;
+}
+
+.string {
+  color: #FFAB40;
+}
+
+.const {
+  color: #2196F3;
+}
+
+.constName {
+  color: #90CAF9;
+}
+
+.export {
+  color: #E91E63;
 }
 
 @media screen and (min-width: 500px) {
