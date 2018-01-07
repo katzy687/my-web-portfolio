@@ -44,7 +44,7 @@ const ProjectsContainer = (props) => {
   });
 
   return (
-    <ul>
+    <ul className={styles.projectContainer} >
       {projects}
     </ul>
   )

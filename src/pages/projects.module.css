@@ -14,10 +14,10 @@
   box-sizing: border-box;
   background: #202020;
   position: relative;
-  
+  max-width: 400px;
 }
 
-.CardContainer p{
+.CardContainer p {
   margin-bottom: 0.4rem;
 }
 
@@ -57,4 +57,12 @@
 }
 .open {
 	max-height: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .projectContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
 }
