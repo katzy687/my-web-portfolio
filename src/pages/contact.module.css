@@ -1,10 +1,12 @@
 .SocialLinks {
   display: flex;
   justify-content: center;
-  font-size: 1.7em;
+  font-size: 1.7rem;
 }
 
 .SocialLinks li {
-  padding: 1em;
+  padding: 0.7rem;
   color: black;
 }
+
+

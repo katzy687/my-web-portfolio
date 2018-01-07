@@ -84,7 +84,7 @@ const FrontEndContent = () => (
       <span className={styles.const} >const</span> <span className={styles.constName} >mySkills</span> = {'{'}
     </p>
     <ul style={{ marginBottom: 0 }}>
-      <li className={styles.constName} style={{margin:0}} >frontEndSkills</li>
+      <li className={styles.constName} style={{margin:0}} >frontEndSkills,</li>
       <li className={styles.constName} style={{margin:0}} >backEndSkills</li>
     </ul>
     <p>{'};'}</p>

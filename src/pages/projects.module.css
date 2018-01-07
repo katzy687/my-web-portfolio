@@ -1,0 +1,60 @@
+.PageContainer {}
+
+.PageContainer h3 {
+  text-align: center;
+}
+
+.ClientProjects {}
+
+.PersonalProjects {}
+
+.CardContainer {
+  border: solid 1px black;
+  /* padding: 1rem; */
+  box-sizing: border-box;
+  background: #202020;
+  position: relative;
+  
+}
+
+.CardContainer p{
+  margin-bottom: 0.4rem;
+}
+
+.description, .metadata {
+  padding: 1rem;
+}
+
+.description {
+  line-height: 1.5rem;
+}
+
+.imageContainer {
+  height: 222px;
+}
+
+.CardContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  overflow-y: hidden;
+  box-sizing: border-box;
+
+  /* z-index: 5; */
+}
+
+
+.slider {
+	transition-property: all;
+	transition-duration: 0.5s;
+  transition-timing-function: ease;
+  max-height: 200px;
+  
+}
+.open {
+	max-height: 0;
+}
