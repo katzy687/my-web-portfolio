@@ -42,9 +42,11 @@ const Social = () => (
 );
 
 export default () => (
-    <div className={['central-container', 'page-styles'].join(' ')} style={{ textAlign: 'center', height: '100vh'}} >
-      <MyEmail />
-      <MyCV />
-      <Social />
+    <div className={styles.pageContainer}>
+      <div className={['central-container', 'page-styles'].join(' ')} style={{ textAlign: 'center', height: '100vh'}} >
+        <MyEmail />
+        <MyCV />
+        <Social />
+      </div>
     </div>
 );
