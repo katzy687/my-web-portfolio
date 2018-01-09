@@ -15,7 +15,7 @@ const MyEmail = () => (
 
 const MyCV = () => (
   <h5>For HR reference: a pdf copy of
-      my <a href="https://drive.google.com/file/d/1tc6SPWCXhANLEXjL49FNntaaU1KZNC1h/view?usp=sharing" style={{ textDecoration: 'underline' }} target="_blank">
+      my <a href="https://drive.google.com/open?id=1-xjMr3apl2yXOydpuq1ZNk15i7UQSVWX" style={{ textDecoration: 'underline' }} target="_blank">
       <span>CV</span>
     </a>
   </h5>
