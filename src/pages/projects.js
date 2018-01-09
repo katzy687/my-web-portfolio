@@ -53,7 +53,7 @@ const ProjectsContainer = (props) => {
 
 export default () => (
   <div className={[styles.PageContainer, 'page-styles'].join(' ')} >
-    <p style={{textAlign: 'center'}}>(click/tap on card to read more)</p>
+    <p style={{textAlign: 'center', fontSize: '1.5rem'}}>(click/tap on card to read more)</p>
     <h3>Client Projects</h3>
     <section className={styles.ClientProjects} >
       <ProjectsContainer projectList={projects.clientProjects} />
