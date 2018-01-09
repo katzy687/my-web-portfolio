@@ -11,6 +11,7 @@
 .CardContainer {
   border: solid 1px black;
   /* padding: 1rem; */
+  margin: 2rem auto;
   box-sizing: border-box;
   background: #202020;
   position: relative;
