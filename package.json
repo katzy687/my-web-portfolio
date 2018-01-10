@@ -4,9 +4,10 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gh-pages -d public",
+    "buildDeploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^1.9.145",
