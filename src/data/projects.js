@@ -12,7 +12,7 @@ const clientProjects = [
     name: 'Dank Tickets',
     description: `Ticketing event site for marijuana conventions. The first project where I incorporated a lot of CSS Grid on the front end. I also hooked up 'Nodemailer' as part of first time user validation flow.`,
     stack: 'AngularJS, mongodb, node, express',
-    url: 'https://www.danktickets.herokuapp.com',
+    url: 'https://danktickets.herokuapp.com/home',
     img: dtPic
   },
   {
@@ -66,3 +66,4 @@ const personalProjects = [
 const projects = {clientProjects, personalProjects};
 
 export default projects;
+

@@ -2,15 +2,15 @@
 
 .PageContainer h3 {
   text-align: center;
+  font-size: 2.5rem;
+  
 }
 
 .ClientProjects {}
 
 .PersonalProjects {}
 
-h3 {
-  font-size: 2.5rem;
-}
+
 
 .ClientProjects {
   margin-bottom: 5rem;
@@ -37,12 +37,13 @@ h3 {
 
 .description {
   line-height: 1.5rem;
-  background: #202020;
-  border: solid #202020 3px;
+  background: #020202;
 }
 
 .imageContainer {
   height: 222px;
+  background: #020202;
+  border: solid 5px black;
 }
 
 .CardContainer img {
@@ -64,7 +65,7 @@ h3 {
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease;
-  max-height: 200px;
+  max-height: 222px;
 }
 
 .open {

@@ -25,8 +25,10 @@ class Project extends Component {
         </div>
         <div className={styles.metadata} >
           <p style={{ textAlign: 'center', fontSize: '1.2rem', fontWeight: 'bold' }}>{this.props.project.name}</p>
-          <p>stack: {this.props.project.stack}</p>
-          <a href={this.props.project.url}>url</a>
+          <p><span style={{fontStyle: 'italic'}}>Stack</span>: {this.props.project.stack}</p>
+          <p onClick={(e) => e.stopPropagation()}>
+            <a href={this.props.project.url} target="_blank">URL</a>
+          </p>
         </div>
       </li>
     )
@@ -53,7 +55,7 @@ const ProjectsContainer = (props) => {
 
 export default () => (
   <div className={[styles.PageContainer, 'page-styles'].join(' ')} >
-    <p style={{textAlign: 'center', fontSize: '1.5rem'}}>(click/tap on card to read more)</p>
+    <p style={{textAlign: 'center', fontSize: '1rem'}}>(click/tap on card to read more)</p>
     <h3>Client Projects</h3>
     <section className={styles.ClientProjects} >
       <ProjectsContainer projectList={projects.clientProjects} />

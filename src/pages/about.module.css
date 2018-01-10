@@ -1,6 +1,6 @@
 .PageContainer {
   background: #424242;
-  padding: 125px 0 50px;
+  padding: 50px 0;
   color: whitesmoke;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .string {
-  color: #FFAB40;
+  color: #FFB74D;
 }
 
 .const {
@@ -82,7 +82,7 @@
 }
 
 .export {
-  color: #E91E63;
+  color: #F06292;
 }
 
 @media screen and (min-width: 500px) {
