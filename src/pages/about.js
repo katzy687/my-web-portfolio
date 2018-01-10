@@ -3,8 +3,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import styles from './about.module.css';
 import { frontEndSkills, backEndSkills } from '../data/skills';
 
-console.log(frontEndSkills);
-
 const AboutMe = () => (
   <div>
     <p style={{ marginBottom: '0.5em' }}>So a bit about myself.</p>
@@ -106,7 +104,6 @@ const generateNumbers = () => {
   for (let i = 1; i < 70; i++) {
     numbers.push(i);
   }
-  console.log(numbers);
   return numbers;
 }
 
