@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import desertVid from '../assets/desert.mp4';
+import desertVid from '../assets/desert-optimized.mp4';
 import BgPic from '../assets/stretch-edit.jpg';
 import styles from "./index.module.css";
 import Particles from 'react-particles-js';
