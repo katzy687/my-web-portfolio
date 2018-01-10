@@ -21,7 +21,7 @@ class Project extends Component {
             className={[styles.slider, isOpen].join(' ')} /> */}
           <Img
             title={this.props.project.name}
-            sizes={this.props.projectImg.sizes}
+            resolutions={this.props.projectImg.resolutions}
             className={[styles.slider, isOpen].join(' ')}
             outerWrapperClassName={styles.GatsbyImgOuterWrapper}
           />
@@ -78,38 +78,38 @@ export default ({ data }) => {
 export const query = graphql`
   query BlurUpQuery {
     emunahPic: imageSharp(id: { regex: "/emunah.png/" }) {
-      sizes(maxWidth: 420) {
-        ...GatsbyImageSharpSizes
+      resolutions(width:400, height: 222) {
+        ...GatsbyImageSharpResolutions
       }
     }
     dtPic: imageSharp(id: { regex: "/dt.png/" }) {
-      sizes(maxWidth: 420) {
-        ...GatsbyImageSharpSizes
+      resolutions(width:400, height: 222) {
+        ...GatsbyImageSharpResolutions
       }
     }
     giliPic: imageSharp(id: { regex: "/gilitowing.png/" }) {
-      sizes(maxWidth: 420) {
-        ...GatsbyImageSharpSizes
+      resolutions(width:400, height: 222) {
+        ...GatsbyImageSharpResolutions
       }
     }
     colorsPic: imageSharp(id: { regex: "/colors.png/" }) {
-      sizes(maxWidth: 420) {
-        ...GatsbyImageSharpSizes
+      resolutions(width:400, height: 222) {
+        ...GatsbyImageSharpResolutions
       }
     }
     lordOfWarPic: imageSharp(id: { regex: "/lordofwar.png/" }) {
-      sizes(maxWidth: 420) {
-        ...GatsbyImageSharpSizes
+      resolutions(width:400, height: 222) {
+        ...GatsbyImageSharpResolutions
       }
     }
     aStarPic: imageSharp(id: { regex: "/astar.png/" }) {
-      sizes(maxWidth: 420) {
-        ...GatsbyImageSharpSizes
+      resolutions(width:400, height: 222) {
+        ...GatsbyImageSharpResolutions
       }
     }
     fancoPic: imageSharp(id: { regex: "/fancofan.png/" }) {
-      sizes(maxWidth: 420) {
-        ...GatsbyImageSharpSizes
+      resolutions(width:400, height: 222) {
+        ...GatsbyImageSharpResolutions
       }
     }
   }
