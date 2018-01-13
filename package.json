@@ -19,6 +19,7 @@
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-sharp": "^1.6.16",
+    "react-blur-image-loader": "^0.2.2",
     "react-html5video": "^2.5.1",
     "react-icons": "^2.2.7",
     "react-particles-js": "^2.1.0",

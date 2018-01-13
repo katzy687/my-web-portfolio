@@ -1,32 +1,44 @@
 import dtPic from '../assets/client-screens/dt-Optimized.png';
 import emunahPic from '../assets/client-screens/emunah-Optimized.png';
-import giliPic from '../assets/client-screens/gilitowing-Optimized.png';
+import giliPic from '../assets/client-screens/gilitowing-Optimized-1.png';
 import colorsPic from '../assets/client-screens/colors-Optimized.png';
 import lordOfWarPic from '../assets/client-screens/lordofwar-Optimized.png';
 import aStarPic from '../assets/client-screens/astar-Optimized.png';
 import fancoPic from '../assets/client-screens/fancofan-Optimized.png';
+import newoldroadPic from '../assets/client-screens/newoldroad-Optimized.png';
 
 const clientProjects = [
-  {
-    name: 'Dank Tickets',
-    description: `Ticketing event site for marijuana conventions. The first project where I incorporated a lot of CSS Grid on the front end. I also hooked up 'Nodemailer' as part of first time user validation flow.`,
-    stack: 'AngularJS, mongodb, node, express',
-    url: 'https://danktickets.herokuapp.com/home',
-    img: dtPic
-  },
   {
     name: 'Emunah',
     description: 'Community site for Rav Dror of Emunah. Hooks into youtube, twitter and soundcloud apis to bring all content to one place.',
     stack: 'angular, youtube, soundcloud apis',
     url: 'https://emunah.com/home',
+    github: 'https://github.com/mbreslow56/Emunah',
     img: emunahPic
+  },
+  {
+    name: 'Dank Tickets',
+    description: `Ticketing event site for marijuana conventions. The first project where I incorporated a lot of CSS Grid on the front end. I also hooked up 'Nodemailer' as part of first time user validation flow.`,
+    stack: 'AngularJS, mongodb, node, express',
+    url: 'https://danktickets.herokuapp.com/home',
+    github: 'https://github.com/mbreslow56/danktickets2.0',
+    img: dtPic
   },
   {
     name: 'Gili\'s Towing',
     description: 'Company landing page for local israeli towing service. First multilingual app. Had to conditonally render rtl or ltr content.',
     stack: 'React / GatsbyJS',
-    url: 'https://gili-grar.surge.sh',
+    url: 'http://gili-towing-telaviv.surge.sh/en/',
+    github: 'https://github.com/mbreslow56/Gili-Towing',
     img: giliPic
+  },
+  {
+    name: 'New Old Road',
+    description: 'Company landing for Web Dev Studio. Responsive design integrating the ParticlesJS library.',
+    stack: 'AngularJS, ParticlesJS',
+    url: 'https://newoldroad.com',
+    github: 'https://github.com/mbreslow56/newoldroad',
+    img: newoldroadPic
   },
   {
     name: 'Hebrew Vocabulary Game',

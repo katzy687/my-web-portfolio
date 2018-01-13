@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Construction from 'react-icons/lib/go/alert';
 import projects from '../data/projects';
 import styles from './projects.module.css';
-// import Img from "gatsby-image";
 
 class Project extends Component {
   state = { slideOpen: false }
@@ -11,20 +10,24 @@ class Project extends Component {
     this.setState({ slideOpen: !this.state.slideOpen });
   }
 
+  toggleOnClick = () => {
+    if (window.innerWidth >= 968 ) {
+      console.log('screen is too big, switching to hover');
+      return;
+    }
+    this.toggleState();
+  }
+
   render() {
     const isOpen = this.state.slideOpen ? styles.open : '';
     return (
-      <li className={styles.CardContainer} onClick={this.toggleState}>
-        <div className={styles.imageContainer} >
+      <li className={styles.CardContainer} onClick={this.toggleOnClick} >
+        <div className={styles.imageContainer} onMouseEnter={this.toggleState} onMouseLeave={this.toggleState}>
           <p className={styles.description} >{this.props.project.description}</p>
           <img src={this.props.project.img} alt={this.props.project.name}
-            className={[styles.slider, isOpen].join(' ')} />
-          {/* <Img
-            title={this.props.project.name}
-            resolutions={this.props.projectImg.resolutions}
-            className={[styles.slider, isOpen].join(' ')}
-            outerWrapperClassName={styles.GatsbyImgOuterWrapper}
-          /> */}
+            className={[styles.slider, isOpen].join(' ')} 
+          />
+       
         </div>
         <div className={styles.metadata} >
           <p style={{ textAlign: 'center', fontSize: '1.2rem', fontWeight: 'bold' }}>{this.props.project.name}</p>
@@ -62,7 +65,8 @@ export default ({ data }) => {
   console.log(data);
   return (
     <div className={[styles.PageContainer, 'page-styles'].join(' ')} >
-      <p style={{ textAlign: 'center', fontSize: '1rem' }}>(click/tap on card to read more)</p>
+      <p className="mobile-only" style={{ textAlign: 'center', fontSize: '1rem' }}>( tap on card to read more )</p>
+      <p className="desktop-only" style={{ textAlign: 'center', fontSize: '1rem' }}>( hover on card to read more )</p>
       <h3>Client Projects</h3>
       <section className={styles.ClientProjects} >
         <ProjectsContainer projectList={projects.clientProjects} />
