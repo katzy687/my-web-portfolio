@@ -36,7 +36,7 @@ const clientProjects = [
     name: 'New Old Road',
     description: 'Company landing for Web Dev Studio. Responsive design integrating the ParticlesJS library.',
     stack: 'AngularJS, ParticlesJS',
-    url: 'https://newoldroad.com',
+    url: 'http://www.newoldroad.com',
     github: 'https://github.com/mbreslow56/newoldroad',
     img: newoldroadPic
   },
