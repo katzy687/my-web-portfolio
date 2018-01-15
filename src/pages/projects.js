@@ -4,30 +4,46 @@ import projects from '../data/projects';
 import styles from './projects.module.css';
 
 class Project extends Component {
-  state = { slideOpen: false }
+  state = {
+    slideOpen: false,
+    imageLoading: true
+  }
 
   toggleState = () => {
     this.setState({ slideOpen: !this.state.slideOpen });
   }
 
   toggleOnClick = () => {
-    if (window.innerWidth >= 968 ) {
+    if (window.innerWidth >= 968) {
       console.log('screen is too big, switching to hover');
       return;
     }
     this.toggleState();
   }
 
+ handleImageLoaded = () => {
+   console.log('image loaded fired');
+   this.setState({ imageLoading: false })
+ }
+
+ handleImageError = () => {
+   this.setState({ imageLoading: false })
+ }
+
   render() {
     const isOpen = this.state.slideOpen ? styles.open : '';
+    const loaderStatus = this.state.imageLoading ? <div className="loader">Loading...</div> : null ;
+    const descStyle = this.state.imageLoading ? {display: 'none'} : {display: 'block'};
     return (
       <li className={styles.CardContainer} onClick={this.toggleOnClick} >
         <div className={styles.imageContainer} onMouseEnter={this.toggleState} onMouseLeave={this.toggleState}>
-          <p className={styles.description} >{this.props.project.description}</p>
+          {loaderStatus}
+          <p className={styles.description} style={descStyle}>{this.props.project.description}</p>
           <img src={this.props.project.img} alt={this.props.project.name}
-            className={[styles.slider, isOpen].join(' ')} 
+            className={[styles.slider, isOpen].join(' ')}
+            onLoad={this.handleImageLoaded}
+            onError={this.handleImageError}
           />
-       
         </div>
         <div className={styles.metadata} >
           <p style={{ textAlign: 'center', fontSize: '1.2rem', fontWeight: 'bold' }}>{this.props.project.name}</p>
