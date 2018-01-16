@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Construction from 'react-icons/lib/go/alert';
 import projects from '../data/projects';
 import styles from './projects.module.css';
+import FaGithub from 'react-icons/lib/fa/github';
 
 class Project extends Component {
   state = {
@@ -48,9 +49,10 @@ class Project extends Component {
         <div className={styles.metadata} >
           <p style={{ textAlign: 'center', fontSize: '1.2rem', fontWeight: 'bold' }}>{this.props.project.name}</p>
           <p><span style={{ fontStyle: 'italic' }}>Stack</span>: {this.props.project.stack}</p>
-          <p onClick={(e) => e.stopPropagation()}>
+          <div onClick={(e) => e.stopPropagation()} className={styles.projectLinks} >
             <a href={this.props.project.url} target="_blank">URL</a>
-          </p>
+            <a href={this.props.project.github} style={{fontSize: '2rem'}} target="_blank"><FaGithub/></a>
+          </div>
         </div>
       </li>
     )

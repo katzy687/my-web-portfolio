@@ -1,4 +1,16 @@
 
+.projectLinks {
+  display: flex;
+  /* justify-content: center; */
+  font-size: 1rem;
+  align-items: center;
+}
+
+.projectLinks a {
+  padding: 0.2rem;
+  margin-right: 0.5rem;
+}
+
 
 .PageContainer {}
 
