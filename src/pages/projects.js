@@ -11,15 +11,28 @@ class Project extends Component {
   }
 
   toggleState = () => {
+    console.log('toggling slide state');
     this.setState({ slideOpen: !this.state.slideOpen });
   }
 
-  toggleOnClick = () => {
-    if (window.innerWidth >= 968) {
-      console.log('screen is too big, switching to hover');
+  handleClick = (e) => {
+    if (window.innerWidth > 768) {
+      console.log('big screen, cancel click');
       return;
     }
+    console.log('handle click fired');
     this.toggleState();
+    e.stopPropagation();
+  }
+
+  handleMouse = (e) => {
+    if (window.innerWidth <= 768) {
+      console.log('small screen, cancel hover');
+      return;
+    }
+    console.log('handle mouse fired');
+    this.toggleState();
+    e.stopPropagation();
   }
 
  handleImageLoaded = () => {
@@ -36,8 +49,8 @@ class Project extends Component {
     const loaderStatus = this.state.imageLoading ? <div className="loader">Loading...</div> : null ;
     const descStyle = this.state.imageLoading ? {display: 'none'} : {display: 'block'};
     return (
-      <li className={styles.CardContainer} onClick={this.toggleOnClick} >
-        <div className={styles.imageContainer} onMouseEnter={this.toggleState} onMouseLeave={this.toggleState}>
+      <li className={styles.CardContainer} onClick={this.handleClick} >
+        <div className={styles.imageContainer} onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse}>
           {loaderStatus}
           <p className={styles.description} style={descStyle}>{this.props.project.description}</p>
           <img src={this.props.project.img} alt={this.props.project.name}
@@ -79,8 +92,7 @@ const ProjectsContainer = (props) => {
 }
 
 
-export default ({ data }) => {
-  console.log(data);
+export default () => {
   return (
     <div className={[styles.PageContainer, 'page-styles'].join(' ')} >
       <p className="mobile-only" style={{ textAlign: 'center', fontSize: '1rem' }}>( tap on card to read more )</p>
